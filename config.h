@@ -86,6 +86,8 @@ static Key keys[] = {
     {MODKEY, XK_period, focusmon, {.i = +1}},
     {MODKEY | ShiftMask, XK_comma, tagmon, {.i = -1}},
     {MODKEY | ShiftMask, XK_period, tagmon, {.i = +1}},
+    {MODKEY, XK_o, spawn, SHCMD("passmenu-otp")},
+    {MODKEY, XK_c, spawn, SHCMD("dunstctl close-all")},
     {MODKEY | ShiftMask, XK_p, spawn, SHCMD("musicset play")},
     {MODKEY, XK_n, spawn, SHCMD("musicset next")},
     {MODKEY | ShiftMask, XK_n, spawn, SHCMD("musicset prev")},
